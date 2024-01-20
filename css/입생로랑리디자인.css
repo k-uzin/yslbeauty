@@ -1024,6 +1024,7 @@ a {
     align-items: center;
     z-index: 1;
     border: 1px solid #fff;
+    cursor: pointer;
     display: none;
 }
 
