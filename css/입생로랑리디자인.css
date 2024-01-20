@@ -782,7 +782,6 @@ a {
     top: 55%;
     right: -60px;
     color: #111;
-    opacity: 80%;
 }
 
 .gift_set .gift_set_slide .swiper-button-next::after {
@@ -792,8 +791,7 @@ a {
 .gift_set .gift_set_slide .swiper-button-prev {
     top: 55%;
     left: -60px;
-    color: #00000030;
-    opacity: 80%;
+    color: #111;
 }
 
 .gift_set .gift_set_slide .swiper-button-prev::after {
