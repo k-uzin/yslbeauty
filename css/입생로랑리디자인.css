@@ -572,7 +572,7 @@ a {
 .ysl_pick {
     position: relative;
     background: url("../img/yls_pick_bg.png");
-    height: 100vh;
+    height: 890px;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 63px;
@@ -581,7 +581,7 @@ a {
 }
 
 .pick_slide:hover {
-    cursor: url('../img/마우스드래그7.png') 50 50, auto;
+    /* cursor: url('../img/마우스드래그7.png') 50 50, auto; */
     /* cursor: w-resize; */
 }
 
