@@ -50,6 +50,7 @@ a {
     background-color: #181818;
     padding: 30px 60px 0;
     z-index: 999;
+    transition: .3s;
 }
 
 .header .logo {
