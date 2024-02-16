@@ -435,7 +435,9 @@ a {
 
 /* ---------------------- .main_slide ------------------------ */
 .main_slide {
-    position: relative;
+    position: absolute;
+    top: 143px;
+    left: 0;
     height: 764px;
 }
 
