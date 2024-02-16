@@ -64,7 +64,7 @@
     // 스크롤 시 헤더 작게
     const header = document.querySelector(".header");
 
-    document.addEventListener('scroll', () => {
+    window.addEventListener('scroll', () => {
         if (window.scrollY > 0) {
             header.classList.add('fixed');
         } else {
@@ -79,7 +79,7 @@
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
-    document.addEventListener('scroll', () => {
+    window.addEventListener('scroll', () => {
         if (window.scrollY > 540) {
             topBtn.classList.add('scroll');
         } else {
