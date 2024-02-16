@@ -15,6 +15,79 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    var swiper = new Swiper(".main_slide", {
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+        },
+        autoplay: {
+          delay: 5000,
+        },
+        speed: 1000,
+        loop: true,
+    });
+
+    var swiper = new Swiper(".best_goods_swiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+        },
+        autoplay: {
+          delay: 3500,
+        },
+        speed: 1000,
+        slidesPerView: 3.2,
+    });
+
+    var swiper = new Swiper(".pick_slide", {
+        slidesPerView: 3,
+        spaceBetween: 120,
+        centeredSlides: true,
+    });
+
+    var swiper = new Swiper(".gift_set_slide", {
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        slidesPerView: 3,
+        spaceBetween: 24,
+    });
+
+
+    // 스크롤 시 헤더 작게
+    const header = document.querySelector(".header");
+
+    document.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            header.classList.add('fixed');
+        } else {
+            header.classList.remove('fixed');
+        }
+    });
+    
+    // 버튼 클릭 시 맨 위로 이동
+    const topBtn = document.querySelector(".to_top");
+
+    topBtn.onclick = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    document.addEventListener('scroll', () => {
+        if (window.scrollY > 540) {
+            topBtn.classList.add('scroll');
+        } else {
+            topBtn.classList.remove('scroll');
+        }
+    });
+
+    AOS.init();
+</script>
 </head>
 
 <body>
@@ -749,78 +822,6 @@
     </div> <!-- .wrap end -->
 </body>
 
-<script>
-    var swiper = new Swiper(".main_slide", {
-        pagination: {
-            el: ".swiper-pagination",
-            type: "progressbar",
-        },
-        autoplay: {
-          delay: 5000,
-        },
-        speed: 1000,
-        loop: true,
-    });
 
-    var swiper = new Swiper(".best_goods_swiper", {
-        pagination: {
-            el: ".swiper-pagination",
-            type: "progressbar",
-        },
-        autoplay: {
-          delay: 3500,
-        },
-        speed: 1000,
-        slidesPerView: 3.2,
-    });
-
-    var swiper = new Swiper(".pick_slide", {
-        slidesPerView: 3,
-        spaceBetween: 120,
-        centeredSlides: true,
-    });
-
-    var swiper = new Swiper(".gift_set_slide", {
-        pagination: {
-            el: ".swiper-pagination",
-            type: "progressbar",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        slidesPerView: 3,
-        spaceBetween: 24,
-    });
-
-
-    // 스크롤 시 헤더 작게
-    const header = document.querySelector(".header");
-
-    document.addEventListener('scroll', () => {
-        if (window.scrollY > 0) {
-            header.classList.add('fixed');
-        } else {
-            header.classList.remove('fixed');
-        }
-    });
-    
-    // 버튼 클릭 시 맨 위로 이동
-    const topBtn = document.querySelector(".to_top");
-
-    topBtn.onclick = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-
-    document.addEventListener('scroll', () => {
-        if (window.scrollY > 540) {
-            topBtn.classList.add('scroll');
-        } else {
-            topBtn.classList.remove('scroll');
-        }
-    });
-
-    AOS.init();
-</script>
 
 </html>
