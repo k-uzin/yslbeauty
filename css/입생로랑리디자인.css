@@ -435,9 +435,8 @@ a {
 
 /* ---------------------- .main_slide ------------------------ */
 .main_slide {
-    position: absolute;
-    top: 143px;
-    left: 0;
+    position: relative;
+    margin-top: 143px;
     height: 764px;
 }
 
@@ -517,7 +516,7 @@ a {
     font-family: 'Abril Fatface', serif;
     font-size: 70px;
     font-weight: 400;
-    margin-top: 288px;
+    margin-top: 145px;
     margin-bottom: 54px;
     text-align: center;
     color: #333;
