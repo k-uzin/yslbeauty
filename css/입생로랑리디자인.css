@@ -17,6 +17,7 @@
 body {
     min-width: 1920px;
     font-family: 'Pretendard';
+    overflow-x: hidden;
 }
 
 li {
@@ -436,8 +437,8 @@ a {
 /* ---------------------- .main_slide ------------------------ */
 .main_slide {
     position: relative;
-    margin-top: 143px;
     height: 764px;
+    margin-top: 143px;
 }
 
 .main_slide .swiper-wrapper {
@@ -626,8 +627,8 @@ a {
 
 .cont .box .item {
     position: absolute;
-    bottom: 66px;
-    right: 110px;
+    bottom: 40px;
+    right: 80px;
 }
 
 .cont .box .item img {
