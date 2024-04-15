@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>입생로랑 뷰티 공식몰 | 입생로랑 | YSL Beauty</title>
-    <link rel="stylesheet" href="css/입생로랑리디자인.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,97 +16,24 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        window.onload = () => {
-          var swiper = new Swiper(".main_slide", {
-        pagination: {
-            el: ".swiper-pagination",
-            type: "progressbar",
-        },
-        autoplay: {
-          delay: 5000,
-        },
-        speed: 1000,
-        loop: true,
-    });
-
-    var swiper = new Swiper(".best_goods_swiper", {
-        pagination: {
-            el: ".swiper-pagination",
-            type: "progressbar",
-        },
-        autoplay: {
-          delay: 3500,
-        },
-        speed: 1000,
-        slidesPerView: 3.2,
-    });
-
-    var swiper = new Swiper(".pick_slide", {
-        slidesPerView: 3,
-        spaceBetween: 120,
-        centeredSlides: true,
-    });
-
-    var swiper = new Swiper(".gift_set_slide", {
-        pagination: {
-            el: ".swiper-pagination",
-            type: "progressbar",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        slidesPerView: 3,
-        spaceBetween: 24,
-    });
-
-
-    // 스크롤 시 헤더 작게
-    const header = document.querySelector(".header");
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 0) {
-            header.classList.add('fixed');
-        } else {
-            header.classList.remove('fixed');
-        }
-    });
-    
-    // 버튼 클릭 시 맨 위로 이동
-    const topBtn = document.querySelector(".to_top");
-
-    topBtn.onclick = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 540) {
-            topBtn.classList.add('scroll');
-        } else {
-            topBtn.classList.remove('scroll');
-        }
-    });
-
-    AOS.init();   
-        }
-   
-</script>
 </head>
 
 <body>
     <div class="wrap">
         <header class="header">
             <h1 class="logo">
-                <a href="#">
+                <a href="./index.html">
                     <img src="img/입생로랑로고.svg" alt="입생로랑로고">
                 </a>
             </h1> <!-- .logo end -->
             <ul class="sub_menu">
                 <li><a href="#" onclick="return false">Find a Store</a></li>
-                <li class="icon_search" onclick="return false"><a href="#"><img src="img/돋보기아이콘.png" alt="돋보기아이콘"></a></li>
-                <li class="icon_mypage" onclick="return false"><a href="#"><img src="img/사람아이콘.png" alt="사람아이콘"></a></li>
-                <li class="icon_cart" onclick="return false"><a href="#"><img src="img/장바구니아이콘.png" alt="장바구니아이콘"></a></li>
+                <li class="icon_search" onclick="return false"><a href="#"><img src="img/돋보기아이콘.png" alt="검색"></a>
+                </li>
+                <li class="icon_mypage"><a href="./signin"><img src="img/사람아이콘.png" alt="마이페이지"></a>
+                </li>
+                <li class="icon_cart"><a href="#"><img src="img/장바구니아이콘.png" alt="장바구니"></a>
+                </li>
             </ul> <!-- .sub_menu end -->
             <div class="main_menu">
                 <ul>
@@ -217,32 +145,32 @@
                     <a href="#" onclick="return false">Benefit</a>
                     <div class="depth02">
                         <div class="inner">
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <img src="img/공식몰혜택.webp" alt="">
-                                            <strong>회원 단독 최대 50% OFF</strong>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img src="img/benefit_02.png" alt="">
-                                            <strong>각인 서비스</strong>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img src="img/benefit_03.png" alt="">
-                                            <strong>AI 피부 진단 서비스</strong>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img src="img/benefit_04.png" alt="">
-                                            <strong>가상 메이크업 서비스</strong>
-                                        </a>
-                                    </li>
-                                </ul>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/공식몰혜택.webp" alt="">
+                                        <strong>회원 단독 최대 50% OFF</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/benefit_02.png" alt="">
+                                        <strong>각인 서비스</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/benefit_03.png" alt="">
+                                        <strong>AI 피부 진단 서비스</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/benefit_04.png" alt="">
+                                        <strong>가상 메이크업 서비스</strong>
+                                    </a>
+                                </li>
+                            </ul>
                         </div> <!-- .inner end -->
                     </div> <!-- .depth02 end -->
                 </div>
@@ -270,6 +198,49 @@
                     </div> <!-- .depth02 end -->
                 </div>
             </div> <!-- .main_menu end -->
+
+            <div class="search_area">
+                <div class="search_top">
+                    <input type="text" placeholder="검색어를 입력하세요.">
+                    <button>검색</button>
+                </div><!-- .search_top end -->
+
+                <div class="search_bottom">
+                    <span>인기 검색어</span>
+                    <div class="swiper search">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">엉크르 드 뽀 쿠션​​</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">메쉬 핑크 쿠션​</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">올아워 파운데이션</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">벨벳 틴트​</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">캔디 글레이즈 컬러밤</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">리브르 여성 향수</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">와이 남성 향수</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">나이트 리부트 세럼</a>
+                            </div>
+                        </div>
+                    </div><!-- .search end -->
+                    <button class="close_btn">
+                        <img src="img/화살표2.png" alt="닫기">
+                    </button><!-- .close_btn end -->
+                </div><!-- .search_bottom end -->
+
+            </div><!-- .search_area end -->
         </header> <!-- .header end -->
 
 
@@ -562,7 +533,7 @@
                         <div class="item_info">
                             <a href="#" onclick="return false" class="item_name">엉크르 드 뽀 쿠션</a>
                             <strong class="item_price">107,000원</strong>
-                            <img src="img/엉그르드뽀섹상동그라미.png" alt="엉크르드뽀색상" class="item_color">
+                            <img src="img/엉그르드뽀섹상동그라미.png" alt="엉크르드뽀색상" class="item_color"></img>
                         </div> <!-- .item_info end -->
                     </div> <!-- .swiper_slide end -->
 
@@ -573,7 +544,7 @@
                         <div class="item_info">
                             <a href="#" onclick="return false" class="item_name">뚜싀 에끌라 글로우-팩트 쿠션</a>
                             <strong class="item_price">107,000원</strong>
-                            <img src="img/뚜싀에끌라색상동그라미.png" alt="뚜싀에끌라색상" class="item_color">
+                            <img src="img/뚜싀에끌라색상동그라미.png" alt="뚜싀에끌라색상" class="item_color"></img>
                         </div> <!-- .item_info end -->
                     </div> <!-- .swiper_slide end -->
 
@@ -584,7 +555,7 @@
                         <div class="item_info">
                             <a href="#" onclick="return false" class="item_name">루쥬 쁴르 꾸띄르</a>
                             <strong class="item_price">55,000원</strong>
-                            <img src="img/루쥬쁴르꾸띄르색상동그라미.png" alt="르쥬쁴르꾸띄르색상" class="item_color">
+                            <img src="img/루쥬쁴르꾸띄르색상동그라미.png" alt="르쥬쁴르꾸띄르색상" class="item_color"></img>
                         </div> <!-- .item_info end -->
                     </div> <!-- .swiper_slide end -->
 
@@ -609,8 +580,11 @@
                             <span>30 / 50ML</span>
                         </div> <!-- .item_info end -->
                     </div> <!-- .swiper_slide end -->
-
                 </div> <!-- .swiper_wrapper end -->
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
             </div> <!-- .pick_slide end -->
         </section> <!-- .ysl_pick end -->
 
@@ -825,6 +799,130 @@
     </div> <!-- .wrap end -->
 </body>
 
+<script>
+    var swiper = new Swiper(".main_slide", {
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+        },
+        autoplay: {
+            delay: 5000,
+        },
+        speed: 1000,
+        loop: true,
+    });
 
+    var swiper = new Swiper(".best_goods_swiper", {
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+        },
+        autoplay: {
+            delay: 3500,
+        },
+        speed: 1000,
+        slidesPerView: 3.2,
+    });
+
+    var swiper = new Swiper(".pick_slide", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        slidesPerView: 3,
+        spaceBetween: 120,
+        centeredSlides: true,
+    });
+
+    var swiper = new Swiper(".gift_set_slide", {
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        slidesPerView: 3,
+        spaceBetween: 24,
+    });
+
+    var swiper = new Swiper(".search", {
+        slidesPerView: 1,
+        autoplay: {
+            delay: 2500,
+        },
+        direction: 'vertical',
+        loop: true
+    });
+
+    // 스크롤 시 헤더 작게
+    let header = document.querySelector(".header");
+
+    window.addEventListener('scroll', () => {
+        let scrollBar = window.scrollY;
+        if (scrollBar > 0) {
+            header.classList.add('fixed');
+        } else {
+            header.classList.remove('fixed');
+        }
+    });
+
+
+    // 버튼 클릭 시 맨 위로 이동
+    let topBtn = document.querySelector(".to_top");
+
+    topBtn.onclick = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 540) {
+            topBtn.classList.add('scroll');
+        } else {
+            topBtn.classList.remove('scroll');
+        }
+    });
+
+
+    //검색 버튼 클릭 시, 검색 영역 나오고 body 어둡게 처리
+    let searchBtn = document.querySelector('.icon_search');
+    let searchArea = document.querySelector('.search_area');
+    let closeBtn = document.querySelector('.close_btn');
+    let body = document.querySelector('body');
+
+    // [js로 가상요소 처리하기1] 가상요소에 대한 스타일을 입력할 style 태그 생성
+    let rootAfterStyle = document.createElement("style");
+
+    // [js로 가상요소 처리하기2] head 태그에 style 태그 삽입
+    document.head.appendChild(rootAfterStyle);
+
+    searchBtn.addEventListener('click', () => {
+        if (searchArea.classList.contains('on')) {
+            searchArea.classList.remove('on');
+
+            // [js로 가상요소 처리하기3] style 태그에 가상요소에 대한 스타일 적용
+            rootAfterStyle.innerHTML = `body::after {
+                display: none
+            }`;
+        } else {
+            searchArea.classList.add('on');
+            rootAfterStyle.innerHTML = `body::after {
+                display: block
+            }`;
+        }
+    });
+
+    closeBtn.addEventListener('click', () => {
+        searchArea.classList.remove('on');
+
+            // [js로 가상요소 처리하기3] style 태그에 가상요소에 대한 스타일 적용
+            rootAfterStyle.innerHTML = `body::after {
+                display: none
+            }`;
+    });
+
+    AOS.init();
+</script>
 
 </html>

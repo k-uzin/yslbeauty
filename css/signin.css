@@ -1,0 +1,99 @@
+main {
+  padding: 240px 750px 0;
+  text-align: center;
+}
+main h2 {
+  font-size: 30px;
+}
+main > p {
+  margin: 8px 0 40px;
+  font-size: 15px;
+  color: #5a5a5a;
+}
+main .signin {
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #eee;
+}
+main .signin input {
+  height: 48px;
+  border-radius: 5px;
+  border: 1px solid #BEBEBE;
+  padding: 15px;
+}
+main .signin .text {
+  display: flex;
+  justify-content: space-between;
+  margin: 7px 0;
+}
+main .signin .text .save_email {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+main .signin .text .save_email span {
+  font-size: 15px;
+  color: #484848;
+}
+main .signin .text .find_info {
+  display: flex;
+  column-gap: 20px;
+}
+main .signin .text .find_info a {
+  position: relative;
+  font-size: 14px;
+  color: #676767;
+}
+main .signin .text .find_info a:first-child::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: -11px;
+  width: 1px;
+  height: 12px;
+  background-color: #BEBEBE;
+}
+main .signin .login_button {
+  height: 52px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 5px;
+}
+main .signin .login_button a {
+  font-size: 18px;
+  line-height: 52px;
+}
+main .signin .kakao_login_button {
+  height: 52px;
+  background-color: #FEE500;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+main .signin .kakao_login_button img {
+  width: 20px;
+  object-fit: cover;
+}
+main .signup {
+  height: 48px;
+  margin-top: 28px;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+}
+main .signup a{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+main .signup p {
+  font-size: 15px;
+}
+main .signup span {
+  font-weight: 600;
+}
