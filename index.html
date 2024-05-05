@@ -27,12 +27,12 @@
                 </a>
             </h1> <!-- .logo end -->
             <ul class="sub_menu">
-                <li><a href="#" onclick="return false">Find a Store</a></li>
-                <li class="icon_search" onclick="return false"><a href="#"><img src="img/돋보기아이콘.png" alt="검색"></a>
+                <li class="store"><a href="./store/index.html">Find a Store</a></li>
+                <li class="icon_search"><a href="#" onclick="return false"><img src="img/돋보기아이콘.png" alt="검색"></a>
                 </li>
-                <li class="icon_mypage"><a href="./signin"><img src="img/사람아이콘.png" alt="마이페이지"></a>
+                <li class="icon_mypage"><a href="./signin/index.html"><img src="img/사람아이콘.png" alt="마이페이지"></a>
                 </li>
-                <li class="icon_cart"><a href="#"><img src="img/장바구니아이콘.png" alt="장바구니"></a>
+                <li class="icon_cart"><a href="#" onclick="return false"><img src="img/장바구니아이콘.png" alt="장바구니"></a>
                 </li>
             </ul> <!-- .sub_menu end -->
             <div class="main_menu">
@@ -186,12 +186,12 @@
                                 <p>새로워진 YSL BEAUTY CLUB 멤버를 위한<br />
                                     등급별 혜택을 확인해보세요!</p>
                                 <div class="btn">
-                                    <div class="view_more">
-                                        <a href="#">자세히 보기</a>
-                                    </div> <!-- .view_more end -->
                                     <div class="membership">
                                         <a href="#">멤버쉽 가입하기</a>
                                     </div> <!-- .membership end -->
+                                    <div class="view_more">
+                                        <a href="#">자세히 보기</a>
+                                    </div> <!-- .view_more end -->
                                 </div> <!-- .btn end -->
                             </div> <!-- .text end -->
                         </div> <!-- .inner end -->
@@ -200,47 +200,128 @@
             </div> <!-- .main_menu end -->
 
             <div class="search_area">
-                <div class="search_top">
-                    <input type="text" placeholder="검색어를 입력하세요.">
-                    <button>검색</button>
-                </div><!-- .search_top end -->
-
-                <div class="search_bottom">
-                    <span>인기 검색어</span>
-                    <div class="swiper search">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="#">엉크르 드 뽀 쿠션​​</a>
+                <div class="inner">
+                    <div class="search_top">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <button>검색</button>
+                    </div><!-- .search_top end -->
+                    <div class="search_bottom">
+                        <span>인기 검색어</span>
+                        <div class="swiper search">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">엉크르 드 뽀 쿠션​​</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">메쉬 핑크 쿠션​</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">올아워 파운데이션</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">벨벳 틴트​</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">캔디 글레이즈 컬러밤</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">리브르 여성 향수</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">와이 남성 향수</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">나이트 리부트 세럼</a>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <a href="#">메쉬 핑크 쿠션​</a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">올아워 파운데이션</a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">벨벳 틴트​</a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">캔디 글레이즈 컬러밤</a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">리브르 여성 향수</a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">와이 남성 향수</a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="#">나이트 리부트 세럼</a>
-                            </div>
-                        </div>
-                    </div><!-- .search end -->
-                    <button class="close_btn">
-                        <img src="img/화살표2.png" alt="닫기">
-                    </button><!-- .close_btn end -->
-                </div><!-- .search_bottom end -->
-
+                        </div><!-- .search end -->
+                        <button class="close_btn">
+                            <img src="img/화살표2.png" alt="닫기">
+                        </button><!-- .close_btn end -->
+                    </div><!-- .search_bottom end -->
+                </div><!-- .inner end -->
             </div><!-- .search_area end -->
+
+            <div class="cart_area">
+                <div class="cart_top">
+                  <div class="cart_num">
+                    <img src="../img/cart2.png" alt="장바구니아이콘">
+                    <span>(3)</span>
+                  </div><!-- .cart_num end -->
+                  <button class="close_btn">
+                    <img src="../img/close.png" alt="닫기">
+                  </button><!-- .close_btn end -->
+                </div><!-- .cart_top end -->
+                <div class="cart_middle">
+                  <div class="coupon">
+                    <img src="../img/coupon.png" alt="무료배송">
+                    <p>무료배송 혜택이 적용 되었습니다.</p>
+                  </div><!-- .coupon end -->
+                  <ul class="item_list">
+                    <li class="item">
+                      <figure>
+                        <img src="../img/루쥬쁴르꾸띄르.png" alt="루쥬쁴르꾸띄르">
+                      </figure>
+                      <div class="item_text">
+                        <h3>루쥬 쁴르 꾸뛰르</h3>
+                        <span>#N5 트리뷰트 뉴드</span>
+                        <div class="item_num">
+                          <span>-</span>
+                          <span>1</span>
+                          <span>+</span>
+                        </div><!-- .item_num end -->
+                      </div><!-- .item_text end -->
+                      <strong>55,000원</strong>
+                      <button>
+                        <img src="../img/close.png" alt="닫기">
+                      </button>
+                    </li><!-- .item end -->
+                    <li class="item">
+                      <figure>
+                        <img src="../img/엉크르드뽀쿠션.png" alt="엉크르드뽀쿠션">
+                      </figure>
+                      <div class="item_text">
+                        <h3>엉크르 드 뽀 쿠션</h3>
+                        <span>#20</span>
+                        <div class="item_num">
+                          <span>-</span>
+                          <span>1</span>
+                          <span>+</span>
+                        </div><!-- .item_num end -->
+                      </div><!-- .item_text end -->
+                      <strong>107,000원</strong>
+                      <button>
+                        <img src="../img/close.png" alt="닫기">
+                      </button>
+                    </li><!-- .item end -->
+                    <li class="item">
+                      <figure>
+                        <img src="../img/캔디글레이즈.png" alt="캔디글레이즈">
+                      </figure>
+                      <div class="item_text">
+                        <h3>캔디 글레이즈 컬러밤</h3>
+                        <span>#13 플레싱 로제</span>
+                        <div class="item_num">
+                          <span>-</span>
+                          <span>1</span>
+                          <span>+</span>
+                        </div><!-- .item_num end -->
+                      </div><!-- .item_text end -->
+                      <strong>49,000원</strong>
+                      <button>
+                        <img src="../img/close.png" alt="닫기">
+                      </button>
+                    </li><!-- .item end -->
+                  </ul><!-- .item_list end -->
+                </div><!-- .cart_middle end -->
+                <div class="cart_bottom">
+                  <div class="text">
+                    <span>총 상품 금액</span>
+                    <strong>211,000원</strong>
+                  </div><!-- .text end -->
+                  <a href="#">장바구니로 이동</a>
+                </div><!-- .cart_bottom end -->
+              </div><!-- .cart_area end -->
         </header> <!-- .header end -->
 
 
@@ -377,7 +458,7 @@
                             <img src="img/엉크르드뽀쿠션.png" class="item_img" alt="엉크르드뽀쿠션">
                         </a>
                         <div class="item_info">
-                            <h4><a href="#">엉크르 드 뽀 쿠션</a></h4>
+                            <h3><a href="#">엉크르 드 뽀 쿠션</a></h3>
                             <strong>107,000원</strong>
                             <div class="color">
                                 <img src="img/엉크르드뽀쿠션색상.png" alt="엉크르드뽀쿠션색상">
@@ -391,7 +472,7 @@
                             <img src="img/캔디글레이즈.png" class="item_img" alt="캔디글레이즈">
                         </a>
                         <div class="item_info">
-                            <h4><a href="#">루쥬 볼륍떼 캔디 글레이즈</a></h4>
+                            <h3><a href="#">루쥬 볼륍떼 캔디 글레이즈</a></h3>
                             <strong>49,000원</strong>
                             <div class="color">
                                 <img src="img/캔디글레이즈색상.png" alt="캔디글레이즈">
@@ -406,7 +487,7 @@
                             <img src="img/뚜싀에끌라쿠션.png " class="item_img" alt="뚜싀에끌라쿠션">
                         </a>
                         <div class="item_info">
-                            <h4><a href="#">뚜쉬 에끌라 글로우-팩트 쿠션</a></h4>
+                            <h3><a href="#">뚜쉬 에끌라 글로우-팩트 쿠션</a></h3>
                             <strong>107,000원</strong>
                             <div class="color">
                                 <img src="img/글로우팩트색상.png" alt="뚜싀에끌라쿠션색상">
@@ -420,7 +501,7 @@
                             <img src="img/마이셀프오드빠르펭.png" class="item_img" alt="마이셀프오드빠르펭">
                         </a>
                         <div class="item_info">
-                            <h4><a href="#">마이셀프 오 드 빠르펭</a></h4>
+                            <h3><a href="#">마이셀프 오 드 빠르펭</a></h3>
                             <strong>168,000원</strong>
                             <div class="color">
                                 40 / 60 / 100ML
@@ -434,7 +515,7 @@
                             <img src="img/루쥬쁴르꾸띄르.png" class="item_img" alt="루쥬쁴르꾸띄르">
                         </a>
                         <div class="item_info">
-                            <h4><a href="#">루쥬 쁴르 꾸띄르</a></h4>
+                            <h3><a href="#">루쥬 쁴르 꾸띄르</a></h3>
                             <strong>55,000원</strong>
                             <div class="color">
                                 <img src="img/루쥬쁴르꾸띄르색상.png" alt="루쥬쁴르꾸띄르색상">
@@ -449,7 +530,7 @@
                             <img src="img/벨벳틴트.png" class="item_img" alt="벨벳틴트">
                         </a>
                         <div class="item_info">
-                            <h4><a href="#">따뚜아쥬 꾸뛰르 벨벳 틴트</a></h4>
+                            <h3><a href="#">따뚜아쥬 꾸뛰르 벨벳 틴트</a></h3>
                             <strong>198,000원</strong>
                             <div class="color">
                                 <img src="img/따뚜아쥬색상.png" alt="따뚜아쥬색상">
@@ -464,7 +545,7 @@
                             <img src="img/리브르앱솔루트플라틴.png" class="item_img" alt="리브르오드빠르펭">
                         </a>
                         <div class="item_info">
-                            <h4><a href="#">리브르 앱솔루트 플라틴</a></h4>
+                            <h3><a href="#">리브르 앱솔루트 플라틴</a></h3>
                             <strong>225,000원</strong>
                             <div class="color">
                                 50 / 90ML
@@ -478,7 +559,7 @@
                             <img src="img/나이트리부트세럼.png" class="item_img" alt="리브르오드빠르펭">
                         </a>
                         <div class="item_info">
-                            <h4><a href="#">나이트 리부트 세럼</a></h4>
+                            <h3><a href="#">나이트 리부트 세럼</a></h3>
                             <strong>143,000원</strong>
                             <div class="color">
                                 30 / 50ML
@@ -492,7 +573,7 @@
                             <img src="img/꾸끠르미니클러치.png" class="item_img" alt="리브르오드빠르펭">
                         </a>
                         <div class="item_info">
-                            <h4><a href="#" onclick="return false">꾸띄르 미니 클러치</a></h4>
+                            <h3><a href="#" onclick="return false">꾸띄르 미니 클러치</a></h3>
                             <strong>198,000원</strong>
                             <div class="color">
                                 <img src="img/미니클러치색상.png" alt="미니클러치색상">
@@ -506,7 +587,7 @@
                             <img src="img/리브르오드빠르펭-1.png" class="item_img" alt="리브르오드빠르펭">
                         </a>
                         <div class="item_info">
-                            <h4><a href="#" onclick="return false">리브르 오 드 빠르펭</a></h4>
+                            <h3><a href="#" onclick="return false">리브르 오 드 빠르펭</a></h3>
                             <strong>132,000원</strong>
                             <div class="color">
                                 30 / 50 / 90ML
@@ -873,7 +954,10 @@
     let topBtn = document.querySelector(".to_top");
 
     topBtn.onclick = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     }
 
     window.addEventListener('scroll', () => {
@@ -885,41 +969,95 @@
     });
 
 
-    //검색 버튼 클릭 시, 검색 영역 나오고 body 어둡게 처리
+    //검색 버튼 클릭 시, 검색 영역 나타나기 / body 어둡게 처리 / 스크롤 막기
     let searchBtn = document.querySelector('.icon_search');
     let searchArea = document.querySelector('.search_area');
-    let closeBtn = document.querySelector('.close_btn');
+    let closeBtn = document.querySelector('.search_area .close_btn');
     let body = document.querySelector('body');
-
-    // [js로 가상요소 처리하기1] 가상요소에 대한 스타일을 입력할 style 태그 생성
-    let rootAfterStyle = document.createElement("style");
-
-    // [js로 가상요소 처리하기2] head 태그에 style 태그 삽입
-    document.head.appendChild(rootAfterStyle);
 
     searchBtn.addEventListener('click', () => {
         if (searchArea.classList.contains('on')) {
             searchArea.classList.remove('on');
-
-            // [js로 가상요소 처리하기3] style 태그에 가상요소에 대한 스타일 적용
-            rootAfterStyle.innerHTML = `body::after {
-                display: none
-            }`;
+            body.classList.remove('on');
+            window.removeEventListener('wheel', preventScroll, {
+                passive: false
+            });
         } else {
             searchArea.classList.add('on');
-            rootAfterStyle.innerHTML = `body::after {
-                display: block
-            }`;
-        }
+            body.classList.add('on');
+            window.addEventListener('wheel', preventScroll, {
+                passive: false
+            });
+        };
     });
+
+    function preventScroll(event) {
+        event.preventDefault();
+    }
 
     closeBtn.addEventListener('click', () => {
         searchArea.classList.remove('on');
+        body.classList.remove('on');
+        window.removeEventListener('wheel', preventScroll, {
+            passive: false
+        });
+    });
 
-            // [js로 가상요소 처리하기3] style 태그에 가상요소에 대한 스타일 적용
-            rootAfterStyle.innerHTML = `body::after {
-                display: none
-            }`;
+    //검색 영역 외의 영역 클릭 시, 검색 영역 사라지기
+    document.addEventListener('click', function (e) {
+        // 클릭된 요소가 header 내부에 있는지 확인
+        let isClickedInsideHeader = header.contains(e.target);
+        // .search_area가 열려있고, 클릭된 요소가 .search_area의 바깥에 있을 때
+        if (searchArea.classList.contains('on') && !isClickedInsideHeader) {
+            searchArea.classList.remove('on');
+            body.classList.remove('on');
+            window.removeEventListener('wheel', preventScroll, {
+                passive: false
+            });
+        }
+    });
+
+    //장바구니 버튼 클릭
+    let cartBtn = document.querySelector('.icon_cart');
+    let cartArea = document.querySelector('.cart_area');
+    let closeCartBtn = document.querySelector('.cart_area .close_btn');
+
+    cartBtn.addEventListener('click', () => {
+        if (cartArea.classList.contains('on')) {
+            cartArea.classList.remove('on');
+            body.classList.remove('on');
+            window.removeEventListener('wheel', preventScroll, {
+                passive: false
+            });
+        } else {
+            cartArea.classList.add('on');
+            searchArea.classList.remove('on');
+            body.classList.add('on');
+            window.addEventListener('wheel', preventScroll, {
+                passive: false
+            });
+        };
+    });
+
+    closeCartBtn.addEventListener('click', () => {
+        cartArea.classList.remove('on');
+        body.classList.remove('on');
+        window.removeEventListener('wheel', preventScroll, {
+            passive: false
+        });
+    });
+
+    //장바구니 영역 외의 영역 클릭 시, 장바구니 영역 사라지기
+    document.addEventListener('click', function (e) {
+        let isClickedInsideHeader = header.contains(e.target);
+        // .search_area가 열려있고, 클릭된 요소가 .search_area의 바깥에 있을 때
+        if (cartArea.classList.contains('on') && !isClickedInsideHeader) {
+            cartArea.classList.remove('on');
+            body.classList.remove('on');
+            window.removeEventListener('wheel', preventScroll, {
+                passive: false
+            });
+        }
     });
 
     AOS.init();

@@ -17,7 +17,18 @@ main .signin {
   padding-bottom: 28px;
   border-bottom: 1px solid #eee;
 }
+main .signin .password {
+  position: relative;
+}
+main .signin .password img {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translate(0, -50%);
+}
 main .signin input {
+  width: 100%;
   height: 48px;
   border-radius: 5px;
   border: 1px solid #BEBEBE;

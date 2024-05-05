@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>입생로랑 뷰티 공식몰 | 입생로랑 | YSL Beauty</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/store.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@400&family=Jomolhari&family=Poppins:wght@300&family=Tiro+Bangla:ital@1&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e02114bea69c616c3087adc10bd203b3"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="header">
+      <h1 class="logo">
+        <a href="../index.html">
+          <img src="../img/입생로랑로고.svg" alt="입생로랑로고">
+        </a>
+      </h1> <!-- .logo end -->
+      <ul class="sub_menu">
+        <li class="store"><a href="./">Find a Store</a></li>
+        <li class="icon_search"><a href="#" onclick="return false"><img src="../img/돋보기아이콘.png" alt="검색"></a>
+        </li>
+        <li class="icon_mypage"><a href="../signin/index.html"><img src="../img/사람아이콘.png" alt="마이페이지"></a>
+        </li>
+        <li class="icon_cart"><a href="#" onclick="return false"><img src="../img/장바구니아이콘.png" alt="장바구니"></a>
+        </li>
+      </ul> <!-- .sub_menu end -->
+      <div class="main_menu">
+        <ul>
+          <li><a href="#" onclick="return false">New</a></li>
+          <li><a href="#" onclick="return false">Best</a></li>
+          <li>
+            <a href="#" onclick="return false">MakeUp</a>
+            <div class="depth02">
+              <div class="inner">
+                <ul>
+                  <li><a href="#">페이스</a></li>
+                  <li><a href="#">쿠션</a></li>
+                  <li><a href="#">파운데이션</a></li>
+                  <li><a href="#">베이스/프라이머</a></li>
+                  <li><a href="#">컨실러</a></li>
+                  <li><a href="#">블러셔/브론저</a></li>
+                  <li><a href="#">하이라이터</a></li>
+                  <li><a href="#">브러시/어플리케이터</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">립</a></li>
+                  <li><a href="#">립스틱</a></li>
+                  <li><a href="#">립틴트</a></li>
+                  <li><a href="#">스마트 틴트 디바이스</a></li>
+                  <li><a href="#">가상 메이크업</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">아이</a></li>
+                  <li><a href="#">마스카라</a></li>
+                  <li><a href="#">아이섀도</a></li>
+                  <li><a href="#">아이라이너</a></li>
+                  <li><a href="#">아이브로우</a></li>
+                </ul>
+                <a href="#" class="image">
+                  <img src="../img/2차메뉴_루쥬쀠르꾸뛰르.webp" alt="">
+                  <span><strong>NEW</strong>루쥬 쀠르 꾸뛰르</span>
+                </a> <!-- .image end -->
+              </div> <!-- .inner end -->
+            </div> <!-- .depth02 end -->
+          </li>
+          <li>
+            <a href="#" onclick="return false">Perfume</a>
+            <div class="depth02">
+              <div class="inner">
+                <div class="category">
+                  <ul>
+                    <li><a href="#">여성향수</a></li>
+                    <li><a href="#">리브르</a></li>
+                    <li><a href="#">몽 파리</a></li>
+                    <li><a href="#">블랙오피움</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">남성향수</a></li>
+                    <li><a href="#">와이</a></li>
+                    <li><a href="#">롬므</a></li>
+                    <li><a href="#">라 뉘 드 롬므</a></li>
+                    <li><a href="#">마이셀프</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">시그니처 향수 컬렉션</a></li>
+                    <li><a href="#">르 베스띠에르</a></li>
+                  </ul>
+                </div> <!-- .category end -->
+                <a href="#" class="image">
+                  <img src="../img/2차메뉴_향수.webp" alt="">
+                  <span><strong>NEW</strong>리브르 앱솔루트 플라틴 향수</span>
+                </a> <!-- .image end -->
+              </div> <!-- .inner end -->
+            </div> <!-- .depth02 end -->
+          </li>
+          <li>
+            <a href="#" onclick="return false">SkinCare</a>
+            <div class="depth02">
+              <div class="inner">
+                <div class="category">
+                  <ul>
+                    <li><a href="#">제품 유형별</a></li>
+                    <li><a href="#">클렌저/토너</a></li>
+                    <li><a href="#">세럼</a></li>
+                    <li><a href="#">에멀전/크림</a></li>
+                    <li><a href="#">아이/립 케어</a></li>
+                    <li><a href="#">UV프로텍션/베이스</a></li>
+                    <li><a href="#">메이크업 세팅 스프레이</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">피부 고민별</a></li>
+                    <li><a href="#">보습</a></li>
+                    <li><a href="#">피부 보호 & 자외선 차단</a></li>
+                    <li><a href="#">화이트닝 & 광채</a></li>
+                    <li><a href="#">주름 & 탄력 개선</a></li>
+                    <li><a href="#">프리미엄 스킨케어</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">제품 라인별</a></li>
+                    <li><a href="#">퓨어샷</a></li>
+                    <li><a href="#">탑 시크릿</a></li>
+                    <li><a href="#">오 후즈</a></li>
+                  </ul>
+                </div> <!-- .category end -->
+                <a href="#" class="image">
+                  <img src="../img/2차메뉴_클렌저.webp" alt="">
+                  <span><strong>NEW</strong>퓨어샷 클렌저</span>
+                </a> <!-- .image end -->
+              </div> <!-- .inner end -->
+            </div> <!-- .depth02 end -->
+          </li>
+        </ul>
+        <div class="menu_benefit">
+          <a href="#" onclick="return false">Benefit</a>
+          <div class="depth02">
+            <div class="inner">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="../img/공식몰혜택.webp" alt="">
+                    <strong>회원 단독 최대 50% OFF</strong>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../img/benefit_02.png" alt="">
+                    <strong>각인 서비스</strong>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../img/benefit_03.png" alt="">
+                    <strong>AI 피부 진단 서비스</strong>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../img/benefit_04.png" alt="">
+                    <strong>가상 메이크업 서비스</strong>
+                  </a>
+                </li>
+              </ul>
+            </div> <!-- .inner end -->
+          </div> <!-- .depth02 end -->
+        </div>
+        <div class="menu_ybc">
+          <a href="#" onclick="return false">YSL Beauty Club</a>
+          <div class="depth02">
+            <div class="inner">
+              <figure>
+                <img src="../img/beautyclub_image.webp" alt="">
+              </figure>
+              <div class="text">
+                <strong>입생로랑 뷰티 멤버쉽 프로그램</strong>
+                <p>새로워진 YSL BEAUTY CLUB 멤버를 위한<br />
+                  등급별 혜택을 확인해보세요!</p>
+                <div class="btn">
+                  <div class="view_more">
+                    <a href="#">자세히 보기</a>
+                  </div> <!-- .view_more end -->
+                  <div class="membership">
+                    <a href="#">멤버쉽 가입하기</a>
+                  </div> <!-- .membership end -->
+                </div> <!-- .btn end -->
+              </div> <!-- .text end -->
+            </div> <!-- .inner end -->
+          </div> <!-- .depth02 end -->
+        </div>
+      </div> <!-- .main_menu end -->
+
+      <div class="search_area">
+        <div class="inner">
+          <div class="search_top">
+            <input type="text" placeholder="검색어를 입력하세요.">
+            <button>검색</button>
+          </div><!-- .search_top end -->
+          <div class="search_bottom">
+            <span>인기 검색어</span>
+            <div class="swiper search">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">엉크르 드 뽀 쿠션​​</a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">메쉬 핑크 쿠션​</a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">올아워 파운데이션</a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">벨벳 틴트​</a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">캔디 글레이즈 컬러밤</a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">리브르 여성 향수</a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">와이 남성 향수</a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">나이트 리부트 세럼</a>
+                </div>
+              </div>
+            </div><!-- .search end -->
+            <button class="close_btn">
+              <img src="../img/화살표2.png" alt="닫기">
+            </button><!-- .close_btn end -->
+          </div><!-- .search_bottom end -->
+        </div><!-- .inner end -->
+      </div><!-- .search_area end -->
+
+      <div class="cart_area">
+        <div class="cart_top">
+          <div class="cart_num">
+            <img src="../img/cart2.png" alt="장바구니아이콘">
+            <span>(3)</span>
+          </div><!-- .cart_num end -->
+          <button class="close_btn">
+            <img src="../img/close.png" alt="닫기">
+          </button><!-- .close_btn end -->
+        </div><!-- .cart_top end -->
+        <div class="cart_middle">
+          <div class="coupon">
+            <img src="../img/coupon.png" alt="무료배송">
+            <p>무료배송 혜택이 적용 되었습니다.</p>
+          </div><!-- .coupon end -->
+          <ul class="item_list">
+            <li class="item">
+              <figure>
+                <img src="../img/루쥬쁴르꾸띄르.png" alt="루쥬쁴르꾸띄르">
+              </figure>
+              <div class="item_text">
+                <h3>루쥬 쁴르 꾸뛰르</h3>
+                <span>#N5 트리뷰트 뉴드</span>
+                <div class="item_num">
+                  <span>-</span>
+                  <span>1</span>
+                  <span>+</span>
+                </div><!-- .item_num end -->
+              </div><!-- .item_text end -->
+              <strong>55,000원</strong>
+              <button>
+                <img src="../img/close.png" alt="닫기">
+              </button>
+            </li><!-- .item end -->
+            <li class="item">
+              <figure>
+                <img src="../img/엉크르드뽀쿠션.png" alt="엉크르드뽀쿠션">
+              </figure>
+              <div class="item_text">
+                <h3>엉크르 드 뽀 쿠션</h3>
+                <span>#20</span>
+                <div class="item_num">
+                  <span>-</span>
+                  <span>1</span>
+                  <span>+</span>
+                </div><!-- .item_num end -->
+              </div><!-- .item_text end -->
+              <strong>107,000원</strong>
+              <button>
+                <img src="../img/close.png" alt="닫기">
+              </button>
+            </li><!-- .item end -->
+            <li class="item">
+              <figure>
+                <img src="../img/캔디글레이즈.png" alt="캔디글레이즈">
+              </figure>
+              <div class="item_text">
+                <h3>캔디 글레이즈 컬러밤</h3>
+                <span>#13 플레싱 로제</span>
+                <div class="item_num">
+                  <span>-</span>
+                  <span>1</span>
+                  <span>+</span>
+                </div><!-- .item_num end -->
+              </div><!-- .item_text end -->
+              <strong>49,000원</strong>
+              <button>
+                <img src="../img/close.png" alt="닫기">
+              </button>
+            </li><!-- .item end -->
+          </ul><!-- .item_list end -->
+        </div><!-- .cart_middle end -->
+        <div class="cart_bottom">
+          <div class="text">
+            <span>총 상품 금액</span>
+            <strong>211,000원</strong>
+          </div><!-- .text end -->
+          <a href="#">장바구니로 이동</a>
+        </div><!-- .cart_bottom end -->
+      </div><!-- .cart_area end -->
+    </header> <!-- .header end -->
+
+    <main>
+      <div class="wrap">
+        <div class="left_area">
+          <input type="text" placeholder="지점을 검색하세요.">
+          <div class="store_list">
+            <div class="store">
+              <strong>입생로랑뷰티 롯데백화점 동래점</strong>
+              <p>부산 동래구 중앙대로 1393 1층</p>
+              <span>051-668-4104</span>
+            </div><!-- .store end -->
+            <div class="store">
+              <strong>입생로랑뷰티 현대백화점 울산점</strong>
+              <p>부산 동래구 중앙대로 1393 1층</p>
+              <span>051-668-4104</span>
+            </div><!-- .store end -->
+            <div class="store">
+              <strong>입생로랑뷰티 롯데백화점 울산점</strong>
+              <p>부산 동래구 중앙대로 1393 1층</p>
+              <span>051-668-4104</span>
+            </div><!-- .store end -->
+            <div class="store">
+              <strong>입생로랑뷰티 더현대 대구점</strong>
+              <p>부산 동래구 중앙대로 1393 1층</p>
+              <span>051-668-4104</span>
+            </div><!-- .store end -->
+            <div class="store">
+              <strong>입생로랑뷰티 롯데백화점 상인점</strong>
+              <p>부산 동래구 중앙대로 1393 1층</p>
+              <span>051-668-4104</span>
+            </div><!-- .store end -->
+            <div class="store">
+              <strong>입생로랑뷰티 롯데백화점 대전점</strong>
+              <p>부산 동래구 중앙대로 1393 1층</p>
+              <span>051-668-4104</span>
+            </div><!-- .store end -->
+            <div class="store">
+              <strong>입생로랑뷰티 현대백화점 압구정본점</strong>
+              <p>부산 동래구 중앙대로 1393 1층</p>
+              <span>051-668-4104</span>
+            </div><!-- .store end -->
+            <div class="store">
+              <strong>입생로랑뷰티 현대백화점 무역센터점</strong>
+              <p>부산 동래구 중앙대로 1393 1층</p>
+              <span>051-668-4104</span>
+            </div><!-- .store end -->
+            <div class="store">
+              <strong>입생로랑뷰티 롯데백화점 김포공항점</strong>
+              <p>부산 동래구 중앙대로 1393 1층</p>
+              <span>051-668-4104</span>
+            </div><!-- .store end -->
+          </div><!-- .store_list end -->
+        </div><!-- .left_ared end -->
+        <div class="right_area">
+          <div id="map" style="width:800px;height:563px;"></div>
+        </div><!-- .right_area end -->
+      </div><!-- .wrap end -->
+    </main>
+
+    <footer class="footer">
+      <div class="footer1">
+        <div class="footer_category">
+          <ul>
+            <li><a href="#" onclick="return false">공식몰 단독 구매 혜택</a></li>
+            <li><a href="#" onclick="return false">첫 구매 전 품목 15% OFF</a></li>
+            <li><a href="#" onclick="return false">구매 금액대별 기프트</a></li>
+            <li><a href="#" onclick="return false">생일 기프트 증정 혜택</a></li>
+            <li><a href="#" onclick="return false">단독 기프트 세트</a></li>
+            <li><a href="#" onclick="return false">회원PRIVATE SALES 최대 50% OFF</a></li>
+          </ul>
+          <ul>
+            <li><a href="#" onclick="return false">공식몰 단독 서비스</a></li>
+            <li><a href="#" onclick="return false">무료 각인 서비스</a></li>
+            <li><a href="#" onclick="return false">정품 증정 REVIEW EVENT</a></li>
+            <li><a href="#" onclick="return false">회원 전 구매 무료배송</a></li>
+            <li><a href="#" onclick="return false">무료 선물포장 서비스</a></li>
+            <li><a href="#" onclick="return false">가상 메이크업 서비스</a></li>
+          </ul>
+          <ul>
+            <li><a href="#" onclick="return false">내 계정</a></li>
+            <li><a href="#" onclick="return false">회원가입/로그인</a></li>
+            <li><a href="#" onclick="return false">주문 목록</a></li>
+            <li><a href="#" onclick="return false">주소록</a></li>
+            <li><a href="#" onclick="return false">사용후기 [REVIEW EVENT]</a></li>
+            <li><a href="#" onclick="return false">YSL BEAUTY CLUB 멤버쉽 프로그램</a></li>
+          </ul>
+          <ul>
+            <li><a href="#" onclick="return false">고객 문의</a></li>
+            <li><a href="#" onclick="return false">고객케어센터</a></li>
+            <li><a href="#" onclick="return false">배송/반품/교환안내</a></li>
+            <li><a href="#" onclick="return false">자주묻는질문</a></li>
+            <li><a href="#" onclick="return false">주문 현황 확인</a></li>
+            <li><a href="#" onclick="return false">개인정보처리방침</a></li>
+            <li><a href="#" onclick="return false">이용 약관</a></li>
+            <li><a href="#" onclick="return false">문의하기</a></li>
+          </ul>
+        </div> <!-- .footer_category end -->
+        <div class="mark">
+          <img src="../img/정품인증.png" alt="정품인증마크">
+        </div>
+      </div> <!-- .footer1 end -->
+
+      <div class="footer2">
+        <div class="footer_info">
+          <span>사업자명: 엘오케이(유)</span>
+          <span>대표: 사무엘 티보 부티에 뒤 리테일</span>
+          <span>사업자 등록번호: 220-81-73483 <a href="#">(사업자정보 확인)</a></span>
+          <span>주소: 서울특별시 강남구 영동대로 517 아셈타워 31층</span>
+          <span>통신판매업신고: 2012-서울강남-01663</span>
+          <span>고객케어센터: 080-835-0089</span>
+          <span>구매/배송/사이트 이용 문의 080-835-0089</span>
+          <span>상담 시간: 월~금 9:30~17:30 (토/일/공휴일 휴무)</span>
+          <span>점심시간: 12:30~13:30</span>
+        </div>
+        <div class="sns">
+          <span>FOLLOW US</span>
+          <ul>
+            <li>
+              <a href="#" onclick="return false">
+                <img src="../img/카카오톡로고.png" alt="카카오톡로고">
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="return false">
+                <img src="../img/인스타로고.png" alt="인스타로고">
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="return false">
+                <img src="../img/페이스북로고.png" alt="페이스북로고">
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="return false">
+                <img src="../img/유튜브로고.png" alt="유튜브로고">
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="return false">
+                <img src="../img/트위터로고.png" alt="트위터로고">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div> <!-- .footer2 end -->
+
+      <div class="footer3">
+        <p>© 2023 Yves Saint Laurent Cosmetics. All rights reserved.</p>
+        <ul>
+          <li><a href="#" onclick="return false">퍼스트데이터코리아(유)의 구매안전 서비스를 이용합니다. </a></li>
+          <li><a href="#" onclick="return false">이용약관</a></li>
+          <li><a href="#" onclick="return false">개인정보처리방침</a></li>
+          <li><a href="#" onclick="return false">쿠키정책</a></li>
+        </ul>
+      </div> <!-- .footer3 end -->
+    </footer> <!-- .footer end -->
+  </div> <!-- .wrap end -->
+</body>
+<script>
+  var swiper = new Swiper(".search", {
+    slidesPerView: 1,
+    autoplay: {
+      delay: 2500,
+    },
+    direction: 'vertical',
+    loop: true
+  });
+
+  // 스크롤 시 헤더 작게
+  let header = document.querySelector(".header");
+
+  window.addEventListener('scroll', () => {
+    let scrollBar = window.scrollY;
+    if (scrollBar > 0) {
+      header.classList.add('fixed');
+    } else {
+      header.classList.remove('fixed');
+    }
+  });
+
+  //검색 버튼 클릭 시, 검색 영역 나타나기 / body 어둡게 처리 / 스크롤 막기
+  let searchBtn = document.querySelector('.icon_search');
+  let searchArea = document.querySelector('.search_area');
+  let closeBtn = document.querySelector('.search_area .close_btn');
+  let body = document.querySelector('body');
+
+  searchBtn.addEventListener('click', () => {
+    if (searchArea.classList.contains('on')) {
+      searchArea.classList.remove('on');
+      body.classList.remove('on');
+      window.removeEventListener('wheel', preventScroll, {
+        passive: false
+      });
+    } else {
+      searchArea.classList.add('on');
+      body.classList.add('on');
+      window.addEventListener('wheel', preventScroll, {
+        passive: false
+      });
+    };
+  });
+
+  function preventScroll(event) {
+    event.preventDefault();
+  }
+
+  closeBtn.addEventListener('click', () => {
+    searchArea.classList.remove('on');
+    body.classList.remove('on');
+    window.removeEventListener('wheel', preventScroll, {
+      passive: false
+    });
+  });
+
+  //검색 영역 외의 영역 클릭 시, 검색 영역 사라지기
+  document.addEventListener('click', function (e) {
+    // 클릭된 요소가 header 내부에 있는지 확인
+    let isClickedInsideHeader = header.contains(e.target);
+    // .search_area가 열려있고, 클릭된 요소가 .search_area의 바깥에 있을 때
+    if (searchArea.classList.contains('on') && !isClickedInsideHeader) {
+      searchArea.classList.remove('on');
+      body.classList.remove('on');
+      window.removeEventListener('wheel', preventScroll, {
+        passive: false
+      });
+    }
+  });
+
+  //장바구니 버튼 클릭
+  let cartBtn = document.querySelector('.icon_cart');
+  let cartArea = document.querySelector('.cart_area');
+  let closeCartBtn = document.querySelector('.cart_area .close_btn');
+
+  cartBtn.addEventListener('click', () => {
+    if (cartArea.classList.contains('on')) {
+      cartArea.classList.remove('on');
+      body.classList.remove('on');
+      window.removeEventListener('wheel', preventScroll, {
+        passive: false
+      });
+    } else {
+      cartArea.classList.add('on');
+      searchArea.classList.remove('on');
+      body.classList.add('on');
+      window.addEventListener('wheel', preventScroll, {
+        passive: false
+      });
+    };
+  });
+
+  closeCartBtn.addEventListener('click', () => {
+    cartArea.classList.remove('on');
+    body.classList.remove('on');
+    window.removeEventListener('wheel', preventScroll, {
+      passive: false
+    });
+  });
+
+  //장바구니 영역 외의 영역 클릭 시, 장바구니 영역 사라지기
+  document.addEventListener('click', function (e) {
+    let isClickedInsideHeader = header.contains(e.target);
+    // .search_area가 열려있고, 클릭된 요소가 .search_area의 바깥에 있을 때
+    if (cartArea.classList.contains('on') && !isClickedInsideHeader) {
+      cartArea.classList.remove('on');
+      body.classList.remove('on');
+      window.removeEventListener('wheel', preventScroll, {
+        passive: false
+      });
+    }
+  });
+
+  //카카오맵
+  var container = document.getElementById('map');
+  var options = {
+    center: new kakao.maps.LatLng(35.2114828, 129.0776055),
+    level: 3
+  };
+  var map = new kakao.maps.Map(container, options);
+
+  var positions = [{
+      title: '입생로랑뷰티 롯데백화점 동래점',
+      latlng: new kakao.maps.LatLng(35.2114828, 129.0776055)
+    },
+    {
+      title: '입생로랑뷰티 현대백화점 울산점',
+      latlng: new kakao.maps.LatLng(35.5396114, 129.335842)
+    },
+    {
+      title: '입생로랑뷰티 롯데백화점 울산점',
+      latlng: new kakao.maps.LatLng(35.5385827, 129.3388321)
+    },
+    {
+      title: '입생로랑뷰티 더현대 대구점',
+      latlng: new kakao.maps.LatLng(35.8667125, 128.5906406)
+    },
+    {
+      title: '입생로랑뷰티 롯데백화점 상인점',
+      latlng: new kakao.maps.LatLng(35.8188204, 128.5388696)
+    },
+    {
+      title: '입생로랑뷰티 롯데백화점 대전점',
+      latlng: new kakao.maps.LatLng(36.3406287, 127.3895615)
+    },
+    {
+      title: '입생로랑뷰티 현대백화점 압구정본점',
+      latlng: new kakao.maps.LatLng(37.5273268, 127.0274265)
+    },
+    {
+      title: '입생로랑뷰티 현대백화점 무역센터점',
+      latlng: new kakao.maps.LatLng(37.5086154, 127.0597808)
+    },
+    {
+      title: '입생로랑뷰티 롯데백화점 김포공항점',
+      latlng: new kakao.maps.LatLng(37.5633643, 126.8031461)
+    }
+  ];
+
+  for (var i = 0; i < positions.length; i++) {
+
+    var marker = new kakao.maps.Marker({ // 마커 생성
+      map: map, // 마커를 표시할 지도
+      position: positions[i].latlng, // 마커를 표시할 위치
+      title: positions[i].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시 됨
+    });
+  }
+</script>
+
+</html>

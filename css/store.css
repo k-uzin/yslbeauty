@@ -1,0 +1,40 @@
+main .wrap {
+  margin: 240px 0 0;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  color: #333;
+}
+main .wrap .left_area {
+  width: 275px;
+}
+main .wrap .left_area input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  background: url('../img/돋보기_bk.png') right 15px center / 18px no-repeat;
+}
+main .wrap .left_area .store_list {
+  height: 523px;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+main .wrap .left_area .store_list .store {
+  cursor: pointer;
+  padding: 20px 0;
+  font-size: 13px;
+  color: #767676;
+  border-bottom: 1px solid #eee;
+}
+main .wrap .left_area .store_list .store:hover {
+  border-bottom: 1px solid #333;
+}
+main .wrap .left_area .store_list .store strong {
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+}
+main .wrap .left_area .store_list .store p {
+  margin: 8px 0 4px;
+}
